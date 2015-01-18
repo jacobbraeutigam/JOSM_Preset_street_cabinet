@@ -10,7 +10,6 @@ link="https://wiki.openstreetmap.org/wiki/Tag:man_made%3Dstreet_cabinet"
 ja.link="https://wiki.openstreetmap.org/wiki/JA:Tag:man_made%3Dstreet_cabinet">
 
   <item name="Street cabinet" de.name="Kabelverzweiger" type="node,closedway">
-    <link href="http://wiki.openstreetmap.org/wiki/DE:Tag:generator:source=wind" />
     <label text="Street cabinet" de.text="Kabelverzweiger" />
     <key key="man_made" value="street_cabinet" />
     <combo key="street_cabinet" text="Type" de.text="Typ" values="power,gas,street_lighting,traffic_control,traffic_monitoring,transport_management,water_management,water,waste,postal_service,telecom,cable_tv" default="" delete_if_empty="true" />
