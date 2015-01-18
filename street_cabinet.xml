@@ -1,6 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
-shortdescription="Windrad"
-description="Vorlagen für Kabelverzweiger"
+shortdescription="Street cabinet"
+de.shortdescription="Kabelverzweiger"
+description="street cabinets"
+de.description="Kabelverzweiger"
 version="2015-01-19" 
 author="Jacob Bräutigam"
 link="https://wiki.openstreetmap.org/wiki/Tag:man_made%3Dstreet_cabinet"
