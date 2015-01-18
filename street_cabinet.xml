@@ -13,7 +13,6 @@ ja.link="https://wiki.openstreetmap.org/wiki/JA:Tag:man_made%3Dstreet_cabinet">
 
   <item name="Street cabinet" de.name="Kabelverzweiger" fr.name="Croix du Cabinet de connexion" type="node,closedway">
     <link href="https://wiki.openstreetmap.org/wiki/Tag:man_made%3Dstreet_cabinet" />
-    <ja.link href="https://wiki.openstreetmap.org/wiki/JA:Tag:man_made%3Dstreet_cabinet" />
     <label text="Street cabinet" de.text="Kabelverzweiger" fr.text="Croix du Cabinet de connexion" />
     <key key="man_made" value="street_cabinet" />
     <combo key="street_cabinet" text="Type" de.text="Typ" fr.text="Type" values="power,gas,street_lighting,traffic_control,traffic_monitoring,transport_management,water_management,water,waste,postal_service,telecom,cable_tv"
