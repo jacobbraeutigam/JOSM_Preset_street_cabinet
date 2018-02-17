@@ -1,33 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
-shortdescription="Street cabinet"
-de.shortdescription="Kabelverzweiger"
-fr.shortdescription="Croix du Cabinet de connexion"
-description="street cabinets"
-de.description="Kabelverzweiger"
-fr.description="Croix du Cabinet de connexion"
-version="2015-01-19" 
-author="Jacob Bräutigam"
-link="https://wiki.openstreetmap.org/wiki/Tag:man_made%3Dstreet_cabinet"
-ja.link="https://wiki.openstreetmap.org/wiki/JA:Tag:man_made%3Dstreet_cabinet">
+  shortdescription="Street cabinet"
+  de.shortdescription="Kabelverzweiger"
+  fr.shortdescription="Croix du Cabinet de connexion"
+  ru.shortdescription="Уличный шкаф"
+  description="street cabinets"
+  de.description="Kabelverzweiger"
+  fr.description="Croix du Cabinet de connexion"
+  ru.description="Газовые, электрические, коммуникационные и т.д."
+  version="1.0_2018-02-18"
+  author="Jacob Bräutigam"
+  link="https://wiki.openstreetmap.org/wiki/Tag:man_made%3Dstreet_cabinet"
+  ja.link="https://wiki.openstreetmap.org/wiki/JA:Tag:man_made%3Dstreet_cabinet">
 
-  <item name="Street cabinet" de.name="Kabelverzweiger" fr.name="Croix du Cabinet de connexion" type="node,closedway">
+  <item name="Street cabinet" de.name="Kabelverzweiger" fr.name="Croix du Cabinet de connexion" ru.name="Уличный шкаф" preset_name_label="true" type="node,closedway,multipolygon">
     <link href="https://wiki.openstreetmap.org/wiki/Tag:man_made%3Dstreet_cabinet" />
-    <label text="Street cabinet" de.text="Kabelverzweiger" fr.text="Croix du Cabinet de connexion" />
+    <space />
     <key key="man_made" value="street_cabinet" />
-    <combo key="street_cabinet" text="Type" de.text="Typ" fr.text="Type" values="power,gas,street_lighting,traffic_control,traffic_monitoring,transport_management,water_management,water,waste,postal_service,telecom,cable_tv"
-           de.display_values="Strom,Gas,Straßenbeleuchtung,Verkehrsregelung,Verkehrsüberwachung,Transportsteuerung,Wassersteuerung,Wasser,Abfall,Post,Telekommunikation,Kabelfernsehen"
-           fr.display_values="Courant,Gaz,Éclairage,Contrôle de la circulation,Surveillance du trafic, , ,Eau,Déchets,Poste,Télécommunications,Télévision par câble" default="" delete_if_empty="true" />
-    <text key="width" text="Width" de.text="Breite" fr.text="Largeur" />
-    <text key="length" text="Length" de.text="Länge" fr.text="Longueur" />
-    <text key="height" text="Height" de.text="Höhe" fr.text="Hauteur" />
-    <text key="direction" text="Cabinet azimuth" de.text="Drehung" fr.text="Rotation" />
-    <text key="colour" text="Colour" de.text="Farbe" fr.text="Couleur" />
-    <text key="manufacturer" text="Manufacturer" de.text="Hersteller" fr.text="Fabricant" />
-    <text key="model" text="model" de.text="Modell" fr.text="Modèle" />
-    <text key="operator" text="Operator" de.text="Betreiber" fr.text="Opérateur" />
-    <text key="ref" text="Reference" de.text="Referenz" fr.text="Référence" />
-    <combo key="hinge" text="Direction of door opening" de.text="Türseite" values="vertical, horizontal " de.display_values="Vertikal, Horizontal" fr.display_values="
-Vertical, Horizontal" default="" delete_if_empty="true" />
-   </item>
+    <combo key="street_cabinet" text="Type">
+      <list_entry value="cable_tv" de.display_value="Kabelfernsehen" fr.display_value="Télévision par câble" ru.display_value="Кабельное ТВ" short_description="cable CATV lines amplifiers or splitters" />
+      <list_entry value="gas" de.display_value="Gas" fr.display_value="Gaz" ru.display_value="Газ" short_description="devices for urban gas distribution" />
+      <list_entry value="postal_service" de.display_value="Post" fr.display_value="Poste" ru.display_value="Почта" short_description="pending letters or other postal stuff before they go on local delivery" />
+      <list_entry value="power" de.display_value="Strom" fr.display_value="Courant" ru.display_value="Электричество" short_description="devices for electricity distribution" />
+      <list_entry value="street_lighting" de.display_value="Straßenbeleuchtung" fr.display_value="Éclairage" ru.display_value="Уличное освещение" short_description="Street lighting switches and cables" />
+      <list_entry value="telecom" de.display_value="Telekommunikation" fr.display_value="Télécommunications" ru.display_value="Связь" short_description="telephone lines amplifiers or connection points" />
+      <list_entry value="traffic_control" de.display_value="Verkehrsregelung" fr.display_value="Contrôle de la circulation" ru.display_value="Управление уличным движением" short_description="Traffic lights automation systems and other traffic control systems such as movable barriers. It can impact on traffic flow." />
+      <list_entry value="traffic_monitoring" de.display_value="Verkehrsüberwachung" fr.display_value="Surveillance du trafic" ru.display_value="Мониторинг уличного движения" short_description="A traffic management device is mainly in charge of vehicle counting. It can''t impact on traffic directly." />
+      <list_entry value="transport_management" de.display_value="Transportsteuerung" ru.display_value="Общественный транспорт" short_description="automation systems to allow public transportation installed on dedicated paths (metro, tramways...) to work" />
+      <list_entry value="waste" de.display_value="Abfall" fr.display_value="Déchets" ru.display_value="Бытовые отходы" short_description="containers for waste and recycling which are not a public amenity, i.e. those for collecting the waste per individual house" />
+      <list_entry value="water" de.display_value="Wasser" fr.display_value="Eau" ru.display_value="Вода" short_description="pipes and valves directly: portable, utility water and sewage" />
+      <list_entry value="water_management" de.display_value="Wassersteuerung" ru.display_value="Контроль за водой" short_description="water management devices like automation or probes but no water pipes: portable, utility water and sewage" />
+    </combo>
+    <text key="length" text="Length (meters)" />
+    <text key="width" text="Width (meters)" />
+    <text key="height" text="Height (meters)" />
+    <combo key="direction" text="Direction" delimiter="|" values="N|E|S|W|NE|NNE-S|180|90-270|270-90|0-360|70-110;250-290" values_no_i18n="true" values_sort="false" />
+    <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,brown,green,red,blue,gray,white,#CD853F" />
+    <text key="manufacturer" text="Manufacturer" de.text="Hersteller" fr.text="Fabricant" ru.text="Производитель" />
+    <text key="model" text="Model" de.text="Modell" fr.text="Modèle" ru.text="Модель" />
+    <combo key="hinge" text="Direction of door opening" de.text="Türseite" ru.text="Дверь открывается">
+      <list_entry value="vertical" de.display_value="Vertikal" fr.display_value="Vertical" ru.display_value="вертикально" />
+      <list_entry value="horizontal" de.display_value="Horizontal" fr.display_value="Horizontal" ru.display_value="горизонтально" />
+    </combo>
+    <text key="ref" text="Reference" />
+    <text key="operator" text="Operator" />
+    <item_separator />
+    <label text="" icon="https://wiki.openstreetmap.org/w/images/thumb/3/30/Street_cabinet_example.png/240px-Street_cabinet_example.png" icon_size="240" />
+  </item>
 </presets>
